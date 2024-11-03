@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, R.string.MainText, Toast.LENGTH_LONG).show();
                 else {
                     String city = txt_input.getText().toString();
-                    String key = "e9f78bfdb89b152e31debc83ddeb4328";
+                    String key = "your openweathermap api key";
                     String url = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + key + "&units=metric&lang=ru&lat&lon";
 
                     new GetResulUrl().execute(url);
